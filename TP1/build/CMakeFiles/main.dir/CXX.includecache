@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florian/Desktop/TP1/src/fibonacci.cpp
+fibonacci.hpp
+/home/florian/Desktop/TP1/src/fibonacci.hpp
+
+/home/florian/Desktop/TP1/src/fibonacci.hpp
+
+/home/florian/Desktop/TP1/src/main.cpp
+iostream
+-
+fibonacci.hpp
+/home/florian/Desktop/TP1/src/fibonacci.hpp
+
+/home/florian/Desktop/TP1/src/vecteur3.cpp
+vecteur3.hpp
+/home/florian/Desktop/TP1/src/vecteur3.hpp
+iostream
+-
+cmath
+-
+
+/home/florian/Desktop/TP1/src/vecteur3.hpp
+

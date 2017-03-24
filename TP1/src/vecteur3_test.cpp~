@@ -1,0 +1,12 @@
+#include "vecteur3.hpp"
+#include <CppUTest/CommandLineTestRunner.h>
+
+TEST_GROUP(GroupeVec) { };
+
+TEST(GroupeVec, test_vec_1) {
+  Vecteur3 v {1, 2, 3};
+
+  CHECK_EQUAL(1, v._x);
+  CHECK_EQUAL(2, v._y);
+  CHECK_EQUAL(3, v._z);
+}
