@@ -6,13 +6,14 @@
 #include "Couleur.hpp"
 
 #include <vector>
+#include <gtkmm.h>
 
 class PolygoneRegulier : public FigureGeometrique
 {
 public:
   PolygoneRegulier(const Couleur&, const Point&, int, int);
   ~PolygoneRegulier();
-  void afficher() const override;
+  void afficher(const Cairo::RefPtr<Cairo::Context>&) const override;
   int getNbPoints() const;
   const Point& getPoint(int) const;
 private:

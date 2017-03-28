@@ -7,6 +7,7 @@ class FigureGeometrique
 {
 public:
   FigureGeometrique(const Couleur&);
+  virtual ~FigureGeometrique() = default;
   const Couleur& getCouleur() const;
   virtual void afficher() const = 0;
 protected:

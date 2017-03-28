@@ -30,11 +30,34 @@ PolygoneRegulier::~PolygoneRegulier()
 {
 }
 
-void PolygoneRegulier::afficher() const
+void PolygoneRegulier::afficher(const Cairo::RefPtr<Cairo::Context>& context)
+  const
 {
+  // Partie graphique
+  // TODO: Vérifier si le point existe normalement oui..
+  context->set_source_rgb(_couleur._r, _couleur._g, _couleur._b);
+  
+  for (unsigned i = 0; i < _points.size() - 1; i++)
+  {
+    Point courant = _points[i];
+    Point suivant = _points[i + 1];
+    context->move_to(courant._x, courant._y);
+    context->line_to(suivant._x, suivant._y);
+    context->stroke();
+  }
+
+  Point start = _points[0];
+  Point last = _points[_points.size() - 1];
+ 
+  context->move_to(start._x, start._y);
+  context->line_to(last._x, last._y);
+  
+  context->stroke();
+  
+  // Partie console
   cout << "PolygoneRegulier " << _couleur._r << "_" << _couleur._g << "_"
        << _couleur._b << " ";
-
+  
   for (unsigned i = 0; i < _points.size(); i++)
   {
     Point p = _points[i];

@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.out.dir/src/FigureGeometrique.cpp.o"
   "CMakeFiles/main.out.dir/src/Ligne.cpp.o"
   "CMakeFiles/main.out.dir/src/PolygoneRegulier.cpp.o"
+  "CMakeFiles/main.out.dir/src/ViewerFigures.cpp.o"
+  "CMakeFiles/main.out.dir/src/ZoneDessin.cpp.o"
   "main.out.pdb"
   "main.out"
 )
