@@ -17,5 +17,17 @@ CMakeFiles/main_test.out.dir/src/Ligne_test.cpp.o: ../src/Ligne.hpp
 CMakeFiles/main_test.out.dir/src/Ligne_test.cpp.o: ../src/Ligne_test.cpp
 CMakeFiles/main_test.out.dir/src/Ligne_test.cpp.o: ../src/Point.hpp
 
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.o: ../src/Couleur.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.o: ../src/FigureGeometrique.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.o: ../src/Point.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.o: ../src/PolygoneRegulier.cpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.o: ../src/PolygoneRegulier.hpp
+
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.o: ../src/Couleur.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.o: ../src/FigureGeometrique.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.o: ../src/Point.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.o: ../src/PolygoneRegulier.hpp
+CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.o: ../src/PolygoneRegulier_test.cpp
+
 CMakeFiles/main_test.out.dir/src/main_test.cpp.o: ../src/main_test.cpp
 

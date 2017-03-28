@@ -223,6 +223,63 @@ src/Ligne_test.cpp.s:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Ligne_test.cpp.s
 .PHONY : src/Ligne_test.cpp.s
 
+src/PolygoneRegulier.o: src/PolygoneRegulier.cpp.o
+
+.PHONY : src/PolygoneRegulier.o
+
+# target to build an object file
+src/PolygoneRegulier.cpp.o:
+	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.o
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/PolygoneRegulier.cpp.o
+.PHONY : src/PolygoneRegulier.cpp.o
+
+src/PolygoneRegulier.i: src/PolygoneRegulier.cpp.i
+
+.PHONY : src/PolygoneRegulier.i
+
+# target to preprocess a source file
+src/PolygoneRegulier.cpp.i:
+	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.i
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/PolygoneRegulier.cpp.i
+.PHONY : src/PolygoneRegulier.cpp.i
+
+src/PolygoneRegulier.s: src/PolygoneRegulier.cpp.s
+
+.PHONY : src/PolygoneRegulier.s
+
+# target to generate assembly for a file
+src/PolygoneRegulier.cpp.s:
+	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/PolygoneRegulier.cpp.s
+	$(MAKE) -f CMakeFiles/main.out.dir/build.make CMakeFiles/main.out.dir/src/PolygoneRegulier.cpp.s
+.PHONY : src/PolygoneRegulier.cpp.s
+
+src/PolygoneRegulier_test.o: src/PolygoneRegulier_test.cpp.o
+
+.PHONY : src/PolygoneRegulier_test.o
+
+# target to build an object file
+src/PolygoneRegulier_test.cpp.o:
+	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.o
+.PHONY : src/PolygoneRegulier_test.cpp.o
+
+src/PolygoneRegulier_test.i: src/PolygoneRegulier_test.cpp.i
+
+.PHONY : src/PolygoneRegulier_test.i
+
+# target to preprocess a source file
+src/PolygoneRegulier_test.cpp.i:
+	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.i
+.PHONY : src/PolygoneRegulier_test.cpp.i
+
+src/PolygoneRegulier_test.s: src/PolygoneRegulier_test.cpp.s
+
+.PHONY : src/PolygoneRegulier_test.s
+
+# target to generate assembly for a file
+src/PolygoneRegulier_test.cpp.s:
+	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/PolygoneRegulier_test.cpp.s
+.PHONY : src/PolygoneRegulier_test.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -296,6 +353,12 @@ help:
 	@echo "... src/Ligne_test.o"
 	@echo "... src/Ligne_test.i"
 	@echo "... src/Ligne_test.s"
+	@echo "... src/PolygoneRegulier.o"
+	@echo "... src/PolygoneRegulier.i"
+	@echo "... src/PolygoneRegulier.s"
+	@echo "... src/PolygoneRegulier_test.o"
+	@echo "... src/PolygoneRegulier_test.i"
+	@echo "... src/PolygoneRegulier_test.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

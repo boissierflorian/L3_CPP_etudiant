@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.out.dir/src/main.cpp.o"
   "CMakeFiles/main.out.dir/src/FigureGeometrique.cpp.o"
   "CMakeFiles/main.out.dir/src/Ligne.cpp.o"
+  "CMakeFiles/main.out.dir/src/PolygoneRegulier.cpp.o"
   "main.out.pdb"
   "main.out"
 )

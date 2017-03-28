@@ -30,9 +30,33 @@ Point.hpp
 
 /home/florian/Bureau/L3_CPP_etudiant/TP4/src/Point.hpp
 
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/PolygoneRegulier.cpp
+PolygoneRegulier.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/PolygoneRegulier.hpp
+cmath
+-
+iostream
+-
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/PolygoneRegulier.hpp
+FigureGeometrique.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/FigureGeometrique.hpp
+Point.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Point.hpp
+Couleur.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Couleur.hpp
+vector
+-
+
 /home/florian/Bureau/L3_CPP_etudiant/TP4/src/main.cpp
 iostream
 -
+vector
+-
 Ligne.hpp
 /home/florian/Bureau/L3_CPP_etudiant/TP4/src/Ligne.hpp
+PolygoneRegulier.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/PolygoneRegulier.hpp
+FigureGeometrique.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/FigureGeometrique.hpp
 

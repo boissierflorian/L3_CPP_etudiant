@@ -8,7 +8,7 @@ class Ligne : public FigureGeometrique
 {
 public:
   Ligne(const Couleur&, const Point&, const Point&);
-  void afficher() const;
+  void afficher() const override;
   const Point& getP0() const;
   const Point& getP1() const;
 private:
