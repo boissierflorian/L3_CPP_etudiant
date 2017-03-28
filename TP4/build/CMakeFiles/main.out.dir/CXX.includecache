@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Couleur.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/FigureGeometrique.cpp
+FigureGeometrique.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/FigureGeometrique.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/FigureGeometrique.hpp
+Couleur.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Couleur.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Ligne.cpp
+Ligne.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Ligne.hpp
+iostream
+-
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Ligne.hpp
+FigureGeometrique.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/FigureGeometrique.hpp
+Point.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Point.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Point.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/main.cpp
+iostream
+-
+Ligne.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP4/src/Ligne.hpp
+

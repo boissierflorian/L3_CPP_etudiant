@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++14 -Wall -Wextra -g   CMakeFiles/main.out.dir/src/main.cpp.o CMakeFiles/main.out.dir/src/FigureGeometrique.cpp.o CMakeFiles/main.out.dir/src/Ligne.cpp.o  -o main.out -rdynamic -lstdc++ -lCppUTest -lCppUTestExt 
