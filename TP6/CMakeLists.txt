@@ -11,7 +11,9 @@ add_executable( main_bibliotheque.out src/main_bibliotheque.cpp )
 target_link_libraries( main_bibliotheque.out ${PKG_LIBRARIES} )
 
 add_executable( main_test.out src/main_test.cpp 
-   src/Bibliotheque_test.cpp
+   src/Bibliotheque.cpp
+   src/Bibliotheque_test.cpp   
+   src/Livre.cpp
    src/Livre_test.cpp )
 target_link_libraries( main_test.out ${PKG_LIBRARIES} )
 

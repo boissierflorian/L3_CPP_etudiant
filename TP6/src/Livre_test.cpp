@@ -1,9 +1,10 @@
-/*
+
 #include <CppUTest/CommandLineTestRunner.h>
 
 #include "Livre.hpp"
 
 #include <sstream>
+#include <string>
 
 TEST_GROUP(GroupLivre) { };
 
@@ -17,41 +18,41 @@ TEST(GroupLivre, Livre_constructeur_1)
 
 TEST(GroupLivre, Livre_constructeur_2) 
 {
-	try 
-    {
-        Livre livre("titre1;", "auteur1", 1337);
-		FAIL( "exception non levee" );
-	}
-	catch (const std::string& str) 
-    {
-		CHECK_EQUAL(str, "erreur : titre non valide (';' non autorisé)");
-	}
+  try 
+  {
+    Livre livre("titre1;", "auteur1", 1337);
+    FAIL( "exception non levee" );
+  }
+  catch (const std::string& str) 
+  {
+    CHECK_EQUAL(str, "erreur : titre non valide (';' non autorisé)");
+  }
 }
 
 TEST(GroupLivre, Livre_constructeur_3) 
 {
-	try 
-    {
-        Livre livre("titre1", "auteur1;", 1337);
-		FAIL( "exception non levee" );
-	}
-	catch (const std::string& str) 
-    {
-		CHECK_EQUAL(str, "erreur : auteur non valide (';' non autorisé)");
-	}
+  try 
+  {
+    Livre livre("titre1", "auteur1;", 1337);
+    FAIL( "exception non levee" );
+  }
+  catch (const std::string& str) 
+  {
+    CHECK_EQUAL(str, "erreur : auteur non valide (';' non autorisé)");
+  }
 }
 
 TEST(GroupLivre, Livre_constructeur_4) 
 {
-	try 
-    {
-        Livre livre("titre1", "auteur1\n", 1337);
-		FAIL( "exception non levee" );
-	}
-	catch (const std::string& str) 
-    {
-		CHECK_EQUAL(str, "erreur : auteur non valide ('\n' non autorisé)");
-	}
+  try 
+  {
+    Livre livre("titre1", "auteur1\n", 1337);
+    FAIL( "exception non levee" );
+  }
+  catch (const std::string& str) 
+  {
+    CHECK_EQUAL(str, "erreur : auteur non valide ('\n' non autorisé)");
+  }
 }
 
 TEST(GroupLivre, Livre_inferieur_pp) 
@@ -147,5 +148,13 @@ TEST(GroupLivre, Livre_sortie_1)
 	CHECK_EQUAL(std::string("titre;auteur;42"), s.str());
 }
 
-*/
+TEST(GroupLivre, Livre_saisie_1)
+{
+  Livre livre;
+  std::string donnees;
+  livre << donnees;
 
+  CHECK_EQUAL(std::string("titre"), livre.getTitre());
+  CHECK_EQUAL(std::string("auteur"), livre.getAuteur());
+  CHECK_EQUAL(42, livre.getAnnee());
+}
