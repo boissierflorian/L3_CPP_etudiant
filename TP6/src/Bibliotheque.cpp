@@ -52,5 +52,5 @@ void Bibliotheque::ecrireFichier(const std::string& nomFichier) const
 
   // Ecriture de la bibliothèque
   for (const Livre& livre : *this)
-    os << livre;
+    os << livre << std::endl;
 }

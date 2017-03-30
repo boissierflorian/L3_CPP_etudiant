@@ -115,14 +115,12 @@ std::istream& operator>>(std::istream& is, Livre& livre)
   is >> livre._auteur;
   is >> livre._annee;
 
-  livre.afficher();
   return is;
 }
 
 std::ostream& operator<<(std::ostream& os, const Livre& livre)
 {
-  return os << livre._titre << std::endl << livre._auteur << std::endl
-	    << livre._annee << std::endl;
+  return os << livre._titre << " " << livre._auteur << " " << livre._annee;
 }
 
 std::vector<std::string> split(const std::stringstream& stream)
