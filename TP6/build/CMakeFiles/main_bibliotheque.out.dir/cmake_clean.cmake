@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main_bibliotheque.out.dir/src/main_bibliotheque.cpp.o"
+  "CMakeFiles/main_bibliotheque.out.dir/src/Livre.cpp.o"
+  "CMakeFiles/main_bibliotheque.out.dir/src/Bibliotheque.cpp.o"
   "main_bibliotheque.out.pdb"
   "main_bibliotheque.out"
 )

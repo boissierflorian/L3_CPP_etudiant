@@ -15,4 +15,6 @@ public:
   void ecrireFichier(const std::string& nomFichier) const;
 };
 
+bool triAuteurTitre(Livre&, Livre&);
+
 #endif

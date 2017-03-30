@@ -109,6 +109,22 @@ bool operator ==(const Livre& a, const Livre& b)
     (a.getAnnee() == b.getAnnee());
 }
 
+std::istream& operator>>(std::istream& is, Livre& livre)
+{
+  is >> livre._titre;
+  is >> livre._auteur;
+  is >> livre._annee;
+
+  livre.afficher();
+  return is;
+}
+
+std::ostream& operator<<(std::ostream& os, const Livre& livre)
+{
+  return os << livre._titre << std::endl << livre._auteur << std::endl
+	    << livre._annee << std::endl;
+}
+
 std::vector<std::string> split(const std::stringstream& stream)
 {
   // Contient les données extraites
@@ -138,4 +154,10 @@ std::vector<std::string> split(const std::stringstream& stream)
   }
 
   return tokens;
+}
+
+void Livre::afficher() const
+{
+  std::cout << "(" << _titre << "," << _auteur << ","
+	    << _annee << ")" << std::endl;
 }

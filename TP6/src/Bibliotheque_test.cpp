@@ -1,6 +1,5 @@
-/*
-#include <CppUTest/CommandLineTestRunner.h>
 
+#include <CppUTest/CommandLineTestRunner.h>
 #include "Bibliotheque.hpp"
 
 #include <sstream>
@@ -65,11 +64,9 @@ TEST(GroupBibliotheque, Bibliotheque_charger_1 )
         b.lireFichier("bibliotheque_fichier_inexistant.txt");
 		FAIL( "exception non levee" );
     }
-	catch (const std::string& str) 
+    catch (const std::string& str) 
     {
         CHECK_EQUAL(str, "erreur : lecture du fichier impossible"); 
-	}
+    }
 }
-
-*/
 

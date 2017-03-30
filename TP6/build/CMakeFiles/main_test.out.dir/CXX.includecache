@@ -9,6 +9,14 @@
 /home/florian/Bureau/L3_CPP_etudiant/TP6/src/Bibliotheque.cpp
 Bibliotheque.hpp
 /home/florian/Bureau/L3_CPP_etudiant/TP6/src/Bibliotheque.hpp
+fstream
+-
+iostream
+-
+algorithm
+-
+string
+-
 
 /home/florian/Bureau/L3_CPP_etudiant/TP6/src/Bibliotheque.hpp
 vector
@@ -40,6 +48,10 @@ string
 sstream
 -
 vector
+-
+iostream
+-
+fstream
 -
 
 /home/florian/Bureau/L3_CPP_etudiant/TP6/src/Livre_test.cpp

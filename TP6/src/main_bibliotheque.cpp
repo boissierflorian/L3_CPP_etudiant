@@ -1,8 +1,10 @@
+#include "Bibliotheque.hpp"
 
-#include <iostream>
-
-int main() {
-    std::cout << "blabla" << std::endl;
-    return 0;
+int main() {  
+  Bibliotheque b;
+  b.push_back(Livre("t1","a1",13));
+  b.push_back(Livre("t2","a2",37));
+  b.push_back(Livre("t0","a0",42));
+  b.afficher();
+  return 0;
 }
-

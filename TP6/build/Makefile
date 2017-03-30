@@ -143,6 +143,7 @@ src/Bibliotheque.o: src/Bibliotheque.cpp.o
 # target to build an object file
 src/Bibliotheque.cpp.o:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Bibliotheque.cpp.o
+	$(MAKE) -f CMakeFiles/main_bibliotheque.out.dir/build.make CMakeFiles/main_bibliotheque.out.dir/src/Bibliotheque.cpp.o
 .PHONY : src/Bibliotheque.cpp.o
 
 src/Bibliotheque.i: src/Bibliotheque.cpp.i
@@ -152,6 +153,7 @@ src/Bibliotheque.i: src/Bibliotheque.cpp.i
 # target to preprocess a source file
 src/Bibliotheque.cpp.i:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Bibliotheque.cpp.i
+	$(MAKE) -f CMakeFiles/main_bibliotheque.out.dir/build.make CMakeFiles/main_bibliotheque.out.dir/src/Bibliotheque.cpp.i
 .PHONY : src/Bibliotheque.cpp.i
 
 src/Bibliotheque.s: src/Bibliotheque.cpp.s
@@ -161,6 +163,7 @@ src/Bibliotheque.s: src/Bibliotheque.cpp.s
 # target to generate assembly for a file
 src/Bibliotheque.cpp.s:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Bibliotheque.cpp.s
+	$(MAKE) -f CMakeFiles/main_bibliotheque.out.dir/build.make CMakeFiles/main_bibliotheque.out.dir/src/Bibliotheque.cpp.s
 .PHONY : src/Bibliotheque.cpp.s
 
 src/Bibliotheque_test.o: src/Bibliotheque_test.cpp.o
@@ -197,6 +200,7 @@ src/Livre.o: src/Livre.cpp.o
 # target to build an object file
 src/Livre.cpp.o:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Livre.cpp.o
+	$(MAKE) -f CMakeFiles/main_bibliotheque.out.dir/build.make CMakeFiles/main_bibliotheque.out.dir/src/Livre.cpp.o
 .PHONY : src/Livre.cpp.o
 
 src/Livre.i: src/Livre.cpp.i
@@ -206,6 +210,7 @@ src/Livre.i: src/Livre.cpp.i
 # target to preprocess a source file
 src/Livre.cpp.i:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Livre.cpp.i
+	$(MAKE) -f CMakeFiles/main_bibliotheque.out.dir/build.make CMakeFiles/main_bibliotheque.out.dir/src/Livre.cpp.i
 .PHONY : src/Livre.cpp.i
 
 src/Livre.s: src/Livre.cpp.s
@@ -215,6 +220,7 @@ src/Livre.s: src/Livre.cpp.s
 # target to generate assembly for a file
 src/Livre.cpp.s:
 	$(MAKE) -f CMakeFiles/main_test.out.dir/build.make CMakeFiles/main_test.out.dir/src/Livre.cpp.s
+	$(MAKE) -f CMakeFiles/main_bibliotheque.out.dir/build.make CMakeFiles/main_bibliotheque.out.dir/src/Livre.cpp.s
 .PHONY : src/Livre.cpp.s
 
 src/Livre_test.o: src/Livre_test.cpp.o
