@@ -11,4 +11,7 @@ struct Inventaire {
     std::vector<Bouteille> _bouteilles;
 };
 
+std::istream& operator>>(std::istream& is, Inventaire& i); 
+std::ostream& operator<<(std::ostream& os, Inventaire & i);
+
 #endif

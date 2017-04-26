@@ -25,13 +25,14 @@ class Vue {
 // interface graphique du viewer de bouteilles. Affiche le détails des
 // bouteilles ainsi qu'un bouton pour ouvrir un fichier de bouteilles.
 class VueGraphique : public Vue {
-    private:
-        Gtk::Main _kit;
-        Gtk::Window _window;
-        Gtk::VBox _box;
-        Gtk::Button _button;
-        Gtk::ScrolledWindow _scrolledWindow;
-        Gtk::TextView _textView;
+private:
+  Gtk::Main _kit;
+  Gtk::Window _window;
+  Gtk::VBox _box;
+  Gtk::Button _button;
+  Gtk::ScrolledWindow _scrolledWindow;
+  Gtk::TextView _textView;
+  Gtk::VPaned _paned;
 
     public:
         // Constructeur à utiliser pour construire l'interface graphique.
@@ -47,6 +48,14 @@ class VueGraphique : public Vue {
 
     private:
         void ouvrirFichier();
+};
+
+// Interface console des bouteilles
+class VueConsole : public Vue {
+public:
+  VueConsole(int argc, char** argv, Controleur& controleur);
+  void actualiser();
+  void run();
 };
 
 #endif
