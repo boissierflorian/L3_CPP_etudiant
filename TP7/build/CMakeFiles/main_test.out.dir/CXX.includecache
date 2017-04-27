@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florian/Bureau/L3_CPP_etudiant/TP7/src/Image.cpp
+Image.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP7/src/Image.hpp
+string
+-
+cmath
+-
+iostream
+-
+
+/home/florian/Bureau/L3_CPP_etudiant/TP7/src/Image.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP7/src/Image_test.cpp
+CppUTest/CommandLineTestRunner.h
+-
+string
+-
+Image.hpp
+/home/florian/Bureau/L3_CPP_etudiant/TP7/src/Image.hpp
+
+/home/florian/Bureau/L3_CPP_etudiant/TP7/src/main_test.cpp
+CppUTest/CommandLineTestRunner.h
+-
+
