@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Liste.hpp
+cassert
+-
+ostream
+-
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/ListeGenerique.hpp
+cassert
+-
+ostream
+-
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Personne.hpp
+string
+-
+ostream
+-
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/main_liste.cpp
+iostream
+-
+algorithm
+-
+Liste.hpp
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Liste.hpp
+ListeGenerique.hpp
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/ListeGenerique.hpp
+Personne.hpp
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Personne.hpp
+

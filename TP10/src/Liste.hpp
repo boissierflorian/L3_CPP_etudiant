@@ -1,4 +1,3 @@
-
 #ifndef LISTE_HPP_
 #define LISTE_HPP_
 
@@ -7,58 +6,87 @@
 
 // liste d'entiers avec itérateur
 class Liste {
-    private:
-        struct Noeud {
-        };
+private:
+  struct Noeud {
+    int _valeur;
+    struct Noeud* _ptrNoeudSuivant; 
+  };
 
-    public:
-        class iterator {
-            public:
-                const iterator & operator++() {
-                    return *this;
-                }
+  Noeud* _ptrTete;
+public:
+  class iterator {
 
-                int& operator*() const {
-                    static int nimpe;
-                    return nimpe;
-                }
+  private:
+    Noeud* _ptrNoeudCourant;
+    
+  public:
+    iterator(Noeud* ptrNoeudCourant)
+    {
+      _ptrNoeudCourant = ptrNoeudCourant;
+    }
+    
+    const iterator & operator++() {
+      // On avance dans la liste
+      _ptrNoeudCourant = _ptrNoeudCourant->_ptrNoeudSuivant;
+      return *this;
+    }
+    
+    int& operator*() const {
+      return _ptrNoeudCourant->_valeur;
+    }
+    
+    bool operator!=(const iterator & it) const {
+      return _ptrNoeudCourant != it._ptrNoeudCourant;
+    }
 
-                bool operator!=(const iterator &) const {
-                    return false;
-                }
+    friend Liste; 
+  };
 
-                friend Liste; 
-        };
+public:
+  Liste() : _ptrTete(nullptr) {}
+  ~Liste() { clear(); }
+  
+  void push_front(int a)
+  {
+    // Modification de la tête
+    _ptrTete = new Noeud{a, _ptrTete};
+  }
 
-    public:
-        void push_front(int) { 
-        }
+  int& front() const {
+    // Si pas de tête que retourner ?
+    assert(_ptrTete);
+    return _ptrTete->_valeur;
+  }
 
-        int& front() const {
-            static int nimpe;
-            return nimpe;
-        }
+  void clear() {
+    Noeud* suiv;
+    
+    while (_ptrTete)
+    {
+      suiv = _ptrTete->_ptrNoeudSuivant;
+      delete _ptrTete;
+      _ptrTete = suiv;
+    }
+  }
 
-        void clear() {
-        }
+  bool empty() const {
+    return !_ptrTete;
+  }
 
-        bool empty() const {
-            return true;
-        }
+  iterator begin() const {
+    return iterator(_ptrTete);
+  }
 
-        iterator begin() const {
-            return iterator();
-        }
-
-        iterator end() const {
-            return iterator();
-        }
-
+  iterator end() const {
+    return iterator(nullptr);
+  }
 };
 
-std::ostream& operator<<(std::ostream& os, const Liste&) {
-    return os;
+std::ostream& operator<<(std::ostream& os, const Liste& l) {
+  for (auto it = l.begin(); it != l.end(); ++it)
+    os << *it << " ";
+  
+  return os;
 }
 
 #endif
-

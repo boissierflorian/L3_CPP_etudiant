@@ -79,3 +79,19 @@ TEST(GroupListe, TestListe_9)
 	CHECK_EQUAL(stream.str(), "42 37 ");
 }
 
+TEST(GroupListe, TestListe_10)
+{
+  Liste liste;
+  liste.push_front(30);
+  liste.push_front(10);
+  liste.push_front(49);
+
+  int k {0};
+  int tab[] = {49, 10, 30};
+  
+  for (const int& i : liste)
+  {
+    CHECK_EQUAL(i, tab[k]);
+    k++;
+  }
+}

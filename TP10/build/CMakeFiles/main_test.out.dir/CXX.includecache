@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Liste.hpp
+cassert
+-
+ostream
+-
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Liste_test.cpp
+CppUTest/CommandLineTestRunner.h
+-
+Liste.hpp
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/Liste.hpp
+sstream
+-
+
+/home/florian/Bureau/L3_INFO/L3_CPP_etudiant/TP10/src/main_test.cpp
+CppUTest/CommandLineTestRunner.h
+-
+
