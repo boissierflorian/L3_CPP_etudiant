@@ -41,5 +41,11 @@ public:
   const std::string plot() override;
 };
 
+class PlotTrips : public Plot
+{
+public:
+  PlotTrips(){}
+  const std::string plot() override;
+};
 
 #endif

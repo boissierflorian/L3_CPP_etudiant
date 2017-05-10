@@ -5,6 +5,7 @@
 // Headers
 ////////////////////////////////////////////////////////////
 #include <gtkmm.h>
+#include <gtkmm/label.h>
 #include <gtkmm/notebook.h>
 #include <gtkmm/spinbutton.h>
 #include <memory>
@@ -44,7 +45,9 @@ private:
   Gtk::Main _kit;                   ///< Gtk app
   Gtk::Window _window;              ///< Main Window
   std::vector<std::unique_ptr<GuiImage>> _plots;     ///< Plots
-  Gtk::Notebook _notebook;          
+  Gtk::Notebook _notebook;
+  Gtk::Label* _label_timestamp1;
+  Gtk::Label* _label_timestamp2;
   Gtk::SpinButton _spin_timestamp1; ///< Borne inférieure
   Gtk::SpinButton _spin_timestamp2; ///< Borne supérieure
   Gtk::SpinButton _spin_nb_drivers;

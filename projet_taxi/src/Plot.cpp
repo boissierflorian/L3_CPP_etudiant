@@ -2,6 +2,7 @@
 // Headers
 ////////////////////////////////////////////////////////////
 #include "Plot.hpp"
+#include <map>
 
 using Poco::Data::Keywords::into;
 using Poco::Data::Keywords::range;
@@ -135,4 +136,47 @@ const string PlotDrivers::plot()
      << " using 2:xtic(1) lc rgb 'green' with boxes notitle \n";
 
   return "out_drivers.png";
+}
+
+
+////////////////////////////////////////////////////////////
+const string PlotTrips::plot()
+{
+  // SQLite connector
+  Poco::Data::SQLite::Connector::registerConnector();
+
+  // Taxi database session 
+  Poco::Data::Session session("SQLite", "data.db");
+
+  vector<pair<string, int>> data;
+  string firstname, lastname;
+  int count;
+
+  std::locale oldLoc = std::locale::global(std::locale("C"));
+  Statement select(session);
+  select << "select FIRSTNAME, LASTNAME, COUNT(*) \
+        from driver d inner join trip tr ON d.id=tr.driver GROUP BY LASTNAME limit 20",
+    into(firstname), into(lastname), into(count), range(0, 1); 
+  while (not select.done()) {
+    select.execute();
+    data.push_back(make_pair(firstname + " " + lastname + ";", count));
+  }
+  std::locale::global(oldLoc);
+  LOG(INFO) << data.size() << " row(s) read\n";
+  LOG(INFO) << "first row: " << data.front().first << " " 
+	    << data.front().second << endl;
+
+  // plot data
+  Gnuplot gp;
+  gp << "set output 'out_drivers.png' \n";
+  gp << "set datafile separator ';'\n";
+  gp << "set terminal png size 800,600 \n";
+  gp << "set style fill solid border -1 \n";
+  gp << "set grid ytics \n";
+  gp << "set boxwidth 0.8 \n";
+  gp << "set xtics rotate by -45 \n";
+  gp << "plot " << gp.file1d(data, "out_trips.csv") 
+     << " using 2:xtic(1) lc rgb 'green' with boxes notitle \n";
+
+  return "out_trips.png";
 }

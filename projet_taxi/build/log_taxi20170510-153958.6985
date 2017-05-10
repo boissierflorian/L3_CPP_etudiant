@@ -1,0 +1,13 @@
+Log file created at: 2017/05/10 15:39:58
+Running on machine: straussl
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0510 15:39:58.364943  6985 GuiWindow.cpp:104] 20 row(s) read
+I0510 15:39:58.368943  6985 GuiWindow.cpp:105] first row: Agra 41.1771
+I0510 15:39:59.767416  6985 Plot.cpp:38] 19 row(s) read
+I0510 15:39:59.767457  6985 Plot.cpp:39] first row: Chevrolet 501
+I0510 15:40:01.114581  6985 Plot.cpp:80] 3 row(s) read
+I0510 15:40:01.114629  6985 Plot.cpp:81] first row: Central 2287
+I0510 15:40:02.502948  6985 Plot.cpp:122] 20 row(s) read
+I0510 15:40:02.502991  6985 Plot.cpp:123] first row: Faith Abbott; 24
+I0510 15:40:03.887881  6985 Plot.cpp:165] 20 row(s) read
+I0510 15:40:03.887926  6985 Plot.cpp:166] first row: Faith Abbott; 24

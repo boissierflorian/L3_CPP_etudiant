@@ -16,7 +16,9 @@ using Poco::Data::Session;
 using namespace std;
 
 ////////////////////////////////////////////////////////////
-GuiWindow::GuiWindow(int argc, char ** argv) : _kit(argc, argv) {
+GuiWindow::GuiWindow(int argc, char ** argv) :
+  _kit(argc, argv)
+{
   Gtk::HBox* ptrHBox = Gtk::manage(new Gtk::HBox);   // Horizontal layout
   ptrHBox->pack_start(_notebook, Gtk::PACK_SHRINK);   // Add notebook
   todoPlot();
@@ -26,12 +28,27 @@ GuiWindow::GuiWindow(int argc, char ** argv) : _kit(argc, argv) {
   ptrHBox->pack_start(*ptrVBox);
 
   // Quit button
-  Gtk::Button* ptrButtonQuit 
-    = Gtk::manage(new Gtk::Button("  Quit  "));
-  ptrVBox->pack_start(*ptrButtonQuit, Gtk::PACK_SHRINK);
-  // Update button
+  Gtk::Button* ptrButtonQuit = Gtk::manage(new Gtk::Button("  Quit  "));
   Gtk::Button* ptrButtonUpdate  = Gtk::manage(new Gtk::Button("  Update  "));
+  // Labels
+  _label_timestamp1 = Gtk::manage(new Gtk::Label("Date"));
+  _label_timestamp2 = Gtk::manage(new Gtk::Label("Date2"));
+  Gtk::Label* ptrLabelNbDrivers = Gtk::manage(new Gtk::Label("nb drivers:"));
+  Gtk::Label* ptrLabelTimeBins = Gtk::manage(new Gtk::Label("nb time bins:"));
+
+  // Layout
+  ptrVBox->pack_start(*_label_timestamp1, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(_spin_timestamp1, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(*_label_timestamp2, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(_spin_timestamp2, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(*ptrLabelNbDrivers, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(_spin_nb_drivers, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(*ptrLabelTimeBins, Gtk::PACK_EXPAND_WIDGET);
+  ptrVBox->pack_start(_spin_time_bins, Gtk::PACK_EXPAND_WIDGET);
   ptrVBox->pack_start(*ptrButtonUpdate, Gtk::PACK_SHRINK);
+  ptrVBox->pack_start(*ptrButtonQuit, Gtk::PACK_SHRINK);
+
+  
   // Signals
   ptrButtonQuit->signal_clicked().connect(sigc::ptr_fun(&Gtk::Main::quit));
   ptrButtonUpdate->signal_clicked().connect(sigc::mem_fun(*this, &GuiWindow::update));
@@ -40,10 +57,13 @@ GuiWindow::GuiWindow(int argc, char ** argv) : _kit(argc, argv) {
   GuiImage* image  = Gtk::manage(new GuiImage(new PlotBrands()));
   GuiImage* image2 = Gtk::manage(new GuiImage(new PlotCalls()));
   GuiImage* image3 = Gtk::manage(new GuiImage(new PlotDrivers()));
-  
+  GuiImage* image4 = Gtk::manage(new GuiImage(new PlotTrips()));
+
   _notebook.append_page(*image);
   _notebook.append_page(*image2);
   _notebook.append_page(*image3);
+  _notebook.append_page(*image4);
+  
   
   // main window
   _window.add(*ptrHBox);
