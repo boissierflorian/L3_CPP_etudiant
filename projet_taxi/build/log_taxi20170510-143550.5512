@@ -1,0 +1,4 @@
+Log file created at: 2017/05/10 14:35:50
+Running on machine: hendricksl
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0510 14:35:50.976124  5512 GuiWindow.cpp:84] 20 row(s) read

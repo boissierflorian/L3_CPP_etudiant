@@ -14,7 +14,8 @@ INCLUDE_DIRECTORIES( ${Pkg_INCLUDE_DIRS} )
 
 ADD_EXECUTABLE( taxi.out 
     src/taxi.cpp 
-    src/GuiWindow.cpp )
+    src/GuiWindow.cpp
+    src/Plot.cpp)
 TARGET_LINK_LIBRARIES( taxi.out 
     ${Poco_LIBRARIES} -lPocoFoundation -lPocoData -lPocoDataSQLite
     ${Pkg_LIBRARIES} 

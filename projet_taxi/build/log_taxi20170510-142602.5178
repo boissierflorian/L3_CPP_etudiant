@@ -1,0 +1,11 @@
+Log file created at: 2017/05/10 14:26:02
+Running on machine: hendricksl
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0510 14:26:02.528659  5178 GuiWindow.cpp:84] 20 row(s) read
+I0510 14:26:02.532233  5178 GuiWindow.cpp:85] first row: Agra 41.1771
+I0510 14:26:03.560431  5178 Plot.cpp:37] 19 row(s) read
+I0510 14:26:03.560458  5178 Plot.cpp:38] first row: Chevrolet 501
+I0510 14:26:04.601902  5178 Plot.cpp:79] 3 row(s) read
+I0510 14:26:04.601934  5178 Plot.cpp:80] first row: Central 2287
+I0510 14:26:05.645705  5178 Plot.cpp:121] 500 row(s) read
+I0510 14:26:05.645735  5178 Plot.cpp:122] first row: Abdul Burks 17
